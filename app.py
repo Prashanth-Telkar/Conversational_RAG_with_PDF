@@ -30,10 +30,9 @@ embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 #setup streamlit
 st.title("Conversational RAG with PDF upload and Chat history")
-st.write("Upload PDF and chat with their contents")
 st.write("This application enables us to upload multiple pdf files and chat with their contents.") 
-st.write("This application is powered by Gemma2-9b-IT model from Groq")
-st.write("The entier application is tracked using LangSmith")
+st.write("This application is powered by Gemma2-9b-IT model from Groq and all-MiniLM-L6-v2 Embedding model from Huggingface")
+st.write("The entire application is tracked using LangSmith")
 
 # Input the Groq API key
 #api_key = st.text_input("Enter the Groq API key:",type="password")
